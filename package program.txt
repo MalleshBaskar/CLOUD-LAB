@@ -1,0 +1,23 @@
+package letmecalculatepackage;
+public class Calculator {
+public void add(int a, int b){
+System.out.println(a+b);
+
+}
+public static void main(String args[]){
+Calculator o = new Calculator();
+o.add(10, 20);
+
+}
+}
+
+Import method from another class with same package
+
+package letmecalculatepackage;
+import letmecalculatepackage.Calculator;
+public class Demo{
+public static void main(String args[]){
+Calculator o = new Calculator();
+o.add(100, 200);
+}
+}

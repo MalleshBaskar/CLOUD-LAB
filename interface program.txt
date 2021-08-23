@@ -1,0 +1,19 @@
+package interfaceprograms;
+interface one //interface
+{
+ final int a = 10;
+ void display(); // public and abstract 
+}
+class TestClass implements one
+{
+ public void display()
+ {
+     System.out.println("class and interface");
+ }
+ public static void main (String[] args)
+ {
+     TestClass t = new TestClass();
+     t.display();
+     System.out.println(a);
+ }
+}
